@@ -19,6 +19,7 @@ A empresa de pneus possui um ambiente de TI híbrido, com uma aplicação de eco
 ### Descrição da Resolução - Cloud
 - Apenas essa aplicação do node.js precisa ser acessada por toda a internet,  já o resto estará privado para garantir a confiabilidade, integridade e disponibilidade nas aplicações na subnet privada
 - Para solução de DRP (Disaster Recovery Plan), cada BD (banco de dados) está alocado em DCs (Data centers) diferentes, como mostra que a zona difere da outra, mantendo assim a resiliencia de dados
+- Exemplo: Caso 1 banco de dados caia, o outro trabalha normalmente armazenando os dados, quando o que caiu volta ao normal, ele pega tudo para ter os dados replicados iguais novamente entre o replica-set
           
 ## Ambiente On-premise
 - **Servidores Virtualizados com VMWare:**
